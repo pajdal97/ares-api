@@ -28,7 +28,7 @@ class Ares
      */
     private function getData()
     {
-        if (self::verify($this->ic)) {
+        if (!self::verify($this->ic)) {
             throw new InvalidIcoException('Neplatné IČO');
         }
         $xml = @simplexml_load_string($this->sendRequest());
