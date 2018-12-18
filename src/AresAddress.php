@@ -32,7 +32,13 @@ class AresAddress
      * @return string
      */
     public function getCity() {
-        return $this->data->N . (!empty($this->data->NCO) ? ' - ' . $this->data->NCO : '');
+        $city = $this->data->N;
+
+        if (!empty($this->data->NCO) && $this->data->NCO != $this->data->N) {
+            $city .= ' - ' . $this->data->NCO;
+        }
+
+        return $city;
     }
 
     /**
@@ -48,7 +54,7 @@ class AresAddress
      * @return string
      */
     public function getStreetNumber() {
-        return $this->data->CD . '/' . $this->data->CO;
+        return $this->data->CD . (!empty($this->data->CO) ? '/' . $this->data->CO : '') ;
     }
 
     /** Celný název ulice
