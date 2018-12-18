@@ -16,7 +16,7 @@ class AresAddress
      * @return string
      */
     public function getCountry() {
-        return $this->data->NS;
+        return strval($this->data->NS;
     }
 
     /**
@@ -24,7 +24,7 @@ class AresAddress
      * @return string
      */
     public function getCountryID() {
-        return $this->data->KS;
+        return strval($this->data->KS;
     }
 
     /**
@@ -40,7 +40,7 @@ class AresAddress
      * @return string
      */
     public function getStreetName() {
-        return $this->data->NU;
+        return strval($this->data->NU);
     }
 
     /**
@@ -63,6 +63,6 @@ class AresAddress
      * @return string
      */
     public function getZIP() {
-        return $this->data->PSC;
+        return strval($this->data->PSC);
     }
 }

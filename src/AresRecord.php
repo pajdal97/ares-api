@@ -16,21 +16,21 @@ class AresRecord
      * @return string
      */
     public function getICO() {
-        return $this->data->ICO;
+        return strval($this->data->ICO);
     }
 
     /**
      * @return string
      */
     public function getDIC() {
-        return $this->data->DIC;
+        return strval($this->data->DIC);
     }
 
     /**
      * @return string
      */
     public function getCompanyName() {
-        return $this->data->OF;
+        return strval($this->data->OF);
     }
 
     /**
