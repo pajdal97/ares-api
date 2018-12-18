@@ -32,7 +32,7 @@ class AresAddress
      * @return string
      */
     public function getCity() {
-        $city = $this->data->N;
+        $city = strval($this->data->N);
 
         if (!empty($this->data->NCO) && $this->data->NCO != $this->data->N) {
             $city .= ' - ' . $this->data->NCO;
