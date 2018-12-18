@@ -16,7 +16,7 @@ class AresAddress
      * @return string
      */
     public function getCountry() {
-        return strval($this->data->NS;
+        return strval($this->data->NS);
     }
 
     /**
@@ -24,7 +24,7 @@ class AresAddress
      * @return string
      */
     public function getCountryID() {
-        return strval($this->data->KS;
+        return strval($this->data->KS);
     }
 
     /**
