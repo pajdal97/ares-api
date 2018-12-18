@@ -12,7 +12,7 @@
         "php": ">=5.6.0",
         "ext-simplexml": "*"
     },
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "autoload": {
         "psr-4": {
             "Vlada\\AresApi\\": "src/"
