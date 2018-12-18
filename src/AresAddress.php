@@ -46,7 +46,7 @@ class AresAddress
      * @return string
      */
     public function getStreetName() {
-        return strval($this->data->NU);
+        return !empty($this->data->NU) ? strval($this->data->NU) : $this->getCity();
     }
 
     /**
