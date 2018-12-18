@@ -1,0 +1,21 @@
+{
+    "name": "vlada/ares-api",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Vladimír Paloušek",
+            "email": "pajdal97@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.6.0",
+        "ext-simplexml": "*"
+    },
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "Vlada\\AresApi\\": "src/"
+        }
+    }
+}
