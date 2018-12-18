@@ -30,7 +30,7 @@ class AresRecord
      * @return string
      */
     public function getCompanyName() {
-        return $this->data->OR;
+        return $this->data->OF;
     }
 
     /**
